@@ -14,10 +14,6 @@ r = 1:K;
 r(p) = r;
 
 kernel_vect = -gaminv(r/(K+1),N,1);
-% nu = 2;
-% f_inv_appo = finv(r/(K+1),2*N,nu);
-% psi_0_fun = -(2*N + nu)./(nu + 2*f_inv_appo);
-% kernel_vect = f_inv_appo.*psi_0_fun;
 
 end
 
