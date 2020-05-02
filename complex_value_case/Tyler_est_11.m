@@ -1,13 +1,13 @@
 function [C, iter] = Tyler_est_11(y, MAX_ITER)
 %         
 % Author:        
-% Esa Ollila, esollila@wooster.hut.fi 
+% Esa Ollila, esa.ollila@aalto.fi
 
 [N K] = size(y);
 
 EPS = 1.0e-4;   % Iteration accuracy
 
-invC0 = eye(N); %inv(Scatter_SCM); % inverse of the initial estimate 
+invC0 = eye(N); 
 iter = 1;
 
 z=y.';
