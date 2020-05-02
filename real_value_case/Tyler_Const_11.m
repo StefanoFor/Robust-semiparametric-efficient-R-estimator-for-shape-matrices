@@ -1,7 +1,7 @@
 function [C, iter] = Tyler_Const_11(y, MAX_ITER);
 %
 % Author:         
-% Esa Ollila, esollila@wooster.hut.fi 
+% Esa Ollila, esa.ollila@aalto.fi
 
 [N K] = size(y);
 
