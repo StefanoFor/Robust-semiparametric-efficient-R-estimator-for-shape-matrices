@@ -63,8 +63,6 @@ for il=1:Nl
         % SCM
         SCM = y*y'/K;
         Scatter_SCM = N*SCM/trace(SCM);
-       
-        % MSE mismatch on sigma
         err_v = L_n*Scatter_SCM(:)-theta_true;
         bias_SCM = bias_SCM + err_v/Ns;
         err_MAT = err_v(1:end,:)*err_v(1:end,:)';
@@ -80,7 +78,7 @@ for il=1:Nl
         MSE_NFP= MSE_NFP + err_NFP/Ns;
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % Rank-based estimator
+        % R - estimator
         [RM, a] = Normalized_VDW_estimator( y, FP, perturbation_par);
         RM = N*RM/trace(RM);
         err_v = L_n*RM(:)-theta_true;
