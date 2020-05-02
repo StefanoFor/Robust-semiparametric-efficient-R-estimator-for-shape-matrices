@@ -4,7 +4,6 @@ V(1,1)=0;
 
 [N, K] = size(y);
 
-
 [Delta_T, Psi_T] = Delta_Psi_eval_G(y, T);
 
 T_pert = T + V/sqrt(K);
