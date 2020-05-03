@@ -79,7 +79,7 @@ for il=1:Nl
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % R - estimator
-        [RM, a] = Normalized_VDW_estimator( y, FP, perturbation_par);
+        [RM, a] = R_VDW_estimator( y, FP, perturbation_par);
         RM = N*RM/trace(RM);
         err_v = L_n*RM(:)-theta_true;
         bias_RM = bias_RM + err_v/Ns;
