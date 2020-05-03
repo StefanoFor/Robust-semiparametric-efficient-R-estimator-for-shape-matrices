@@ -148,6 +148,7 @@ hold on
 semilogy(svect,Fro_MSE_NFP,line_marker{4},'LineWidth',1,'Color',color_matrix(4,:),'MarkerEdgeColor',color_matrix(4,:),'MarkerFaceColor',color_matrix(4,:),'MarkerSize',8);
 grid on;
 semilogy(svect,Fro_MSE_RM,line_marker{5},'LineWidth',1,'Color',color_matrix(5,:),'MarkerEdgeColor',color_matrix(5,:),'MarkerFaceColor',color_matrix(5,:),'MarkerSize',8);
+axis([0.1 2 0.25 0.6])
 xlabel('Shape parameter: s');ylabel('Frobenius norm');
 legend('CCRB','CSCRB','CSCM','C-Tyler','R-est')
 title('MSE in Frobenus norm')
