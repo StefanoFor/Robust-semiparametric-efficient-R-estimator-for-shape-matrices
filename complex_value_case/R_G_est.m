@@ -1,7 +1,7 @@
 function [ N_VDW,  beta_est] = R_G_est( y, T, pert)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Imput: 
+% Input: 
 % Complex data matrix: y (Here the data is asumed to be zero-mean observations. 
                   % If it doesn't, y has to be centered using 
                   % a preliminary estimator of the location parameter)
