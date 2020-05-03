@@ -76,7 +76,7 @@ for il=1:Nl
         MSE_NFP= MSE_NFP + err_NFP/Ns;
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % Rank-based estimator (Gaussian kernel)
+        % R - estimator (Gaussian kernel)
         [RM, a_G] = R_G_est( y, FP, perturbation_par);
         RM = N*RM/trace(RM);
         err_v = RM(:)-theta_true;
