@@ -76,7 +76,7 @@ for il=1:Nl
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % R - estimator
-        [RM, a] = R_F_est( y, FP, nu_par, perturbation_par);
+        [RM, a] = R_G_est( y, FP, nu_par, perturbation_par);
         RM = N*RM/trace(RM);
         err_v = RM(:)-theta_true;
         bias_RM = bias_RM + err_v/Ns;
