@@ -3,7 +3,7 @@ close all
 clc
 
 
-Ns=10^6; % monte carlo trials
+Ns=10^6; % monte carlo runs
 N = 8;
 Max_it = 50;
 
