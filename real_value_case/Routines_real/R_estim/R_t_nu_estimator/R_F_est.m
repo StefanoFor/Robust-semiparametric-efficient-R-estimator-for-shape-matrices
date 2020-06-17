@@ -7,6 +7,7 @@ function [ N_F,  beta_est] = R_F_est( y, T, nu, pert)
                   % a preliminary estimator of the location parameter)
 % Preliminary consistent estimator: T 
 % Perturabtion parameter: pert
+% Parameter of the t-score: nu
 
 % Output:
 % Semiparametric efficient R-estimator of the shape: N_F
