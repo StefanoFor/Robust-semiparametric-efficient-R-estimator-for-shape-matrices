@@ -55,7 +55,7 @@ for il=1:Nl
     parfor ins=1:Ns
         
         w = randn(N,K);
-        R = 2*gamrnd(lambda/2,2*scale,1,K);
+        R = gamrnd(lambda/2,2*scale,1,K);
         x = L*w;
         y = sqrt(1./(repmat(R,N,1))).*x;
         
